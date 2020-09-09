@@ -1,2 +1,36 @@
 // Specific CSS for your home-page
+.content-height {
+  height: 80vh;
+}
 
+// WHO WE ARE PAGE CSS
+.whoweare-banner {
+  background-image:url('cliff.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.whoweare-content {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  height: 80vh;
+  width: 45vw;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+  p {
+    font-family: 'Work Sans', helvetica;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 16px;
+
+  }
+
+  .radical-vision {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-top: 40px;
+  }
+}

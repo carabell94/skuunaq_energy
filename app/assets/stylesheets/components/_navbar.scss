@@ -16,8 +16,9 @@
   height: 100px;
   display: flex;
   justify-content: flex-end;
-  // position: fixed;
-  // top: 0;
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .nav-link {
@@ -28,3 +29,7 @@
     color: #0d284c !important;
     background-color: white !important;
   }
+
+.height100 {
+  height: 100px;
+}
