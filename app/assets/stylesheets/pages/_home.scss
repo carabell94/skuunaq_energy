@@ -51,6 +51,22 @@
   position: absolute;
   left: 0;
   text-align: center;
+
+  h1, p {
+    font-family: 'Work Sans', helvetica;
+    color: white;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 8px 8px 0px 8px;
+  }
 }
 
 // DRIVING CHANGE PAGE CSS
@@ -63,14 +79,30 @@
 }
 
 .drivingchange-content {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
   height: 80vh;
   width: 45vw;
   display: inline-block;
   position: absolute;
   right: 0;
   text-align: center;
-  color: white;
+
+  h1, p {
+    font-family: 'Work Sans', helvetica;
+    color: white;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-top: 80px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 8px 8px 0px 8px;
+  }
+
 }
 
 // ENERGY HUB PAGE CSS
@@ -83,7 +115,7 @@
 }
 
 .energyhub-content {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
   height: 80vh;
   width: 40vw;
   display: inline-block;
@@ -91,4 +123,20 @@
   left: 0;
   text-align: center;
   color: white;
+
+  h1, p {
+    font-family: 'Work Sans', helvetica;
+    color: white;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding-top: 80px;
+    font-weight: bolder;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 8px 8px 0px 8px;
+  }
 }
