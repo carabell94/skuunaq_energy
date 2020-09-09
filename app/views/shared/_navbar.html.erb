@@ -1,0 +1,36 @@
+<!-- NAVBAR -->
+ <div class="navbar">
+  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="whoweare" data-toggle="pill" href="#pills-whoweare" role="tab" aria-controls="pills-whoweare" aria-selected="false">Who We Are</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="sharedvision" data-toggle="pill" href="#pills-sharedvision" role="tab" aria-controls="pills-sharedvision" aria-selected="false">A Shared Vision</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"id="drivingchange" data-toggle="pill" href="#pills-drivingchange" role="tab" aria-controls="pills-drivingchange" aria-selected="false">Driving Change</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"id="energyhub" data-toggle="pill" href="#pills-energyhub" role="tab" aria-controls="pills-energyhub" aria-selected="false">Energy Hub</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+
+    <div class="tab-pane fade show active" id="pills-whoweare" role="tabpanel" aria-labelledby="pills-whoweare-tab">
+      <%= render 'pages/partials/whoweare' %>
+    </div>
+
+    <div class="tab-pane fade" id="pills-sharedvision" role="tabpanel" aria-labelledby="pills-sharedvision-tab">
+      <%= render 'pages/partials/sharedvision' %>
+    </div>
+
+    <div class="tab-pane fade" id="pills-drivingchange" role="tabpanel" aria-labelledby="pills-drivingchange-tab">
+      <%= render 'pages/partials/drivingchange' %>
+    </div>
+
+    <div class="tab-pane fade" id="pills-energyhub" role="tabpanel" aria-labelledby="pills-energyhub-tab">
+      <%= render 'pages/partials/energyhub' %>
+    </div>
+  </div>
+</div>

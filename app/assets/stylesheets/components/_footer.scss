@@ -1,0 +1,17 @@
+.homepage-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+
+  p {
+    padding-top: 28px;
+    padding-right: 40px;
+  }
+}
+
+.footer-logo {
+  height: 85px;
+  width: 85px;
+  margin-left: 20px;
+  padding-bottom: 8px;
+}
