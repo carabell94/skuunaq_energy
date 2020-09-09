@@ -3,20 +3,42 @@
   background-size: cover;
   background-position: center;
   height: 80vh;
-  padding-left: 32px;
-  padding-top: 128px;
+  // padding-top: 128px;
 }
 
 .banner h1 {
   font-family: 'helvetica', serif;
   color: white;
   font-size: 64px;
+  margin-left: 32px;
 }
 
 .banner h3 {
-  font-size: 24px;
+  font-size: 20px;
+  margin-left: 32px;
 }
 
+// 'Learn More' Button
+.banner a {
+  margin-left: 32px;
+}
+
+// Skuunaq Energy
 .title {
     font-size: 72px;
-  }
+}
+
+// Opacity round contents
+.banner-content {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  height: 80vh;
+  width: 40vw;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.btn-primary {
+  border-radius: 5px;
+}
+
