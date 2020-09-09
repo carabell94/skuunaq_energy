@@ -152,3 +152,17 @@ html {
   width: 100vw;
   scroll-snap-align: start;
 }
+
+// Button
+
+.btn-primary {
+  background-color:#0d284c;
+  color: white;
+  border: 1px solid #0d284c;
+
+  &:hover {
+    color: #0d284c;
+    background-color: white;
+    border: 1px solid white;
+  }
+}
