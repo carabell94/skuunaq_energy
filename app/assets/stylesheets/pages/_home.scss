@@ -34,3 +34,61 @@
     padding-top: 40px;
   }
 }
+
+// SHARED VISION PAGE CSS
+.sharedvision-banner {
+  background-image:url('causeway.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.sharedvision-content {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  height: 80vh;
+  width: 40vw;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+// DRIVING CHANGE PAGE CSS
+
+.drivingchange-banner {
+  background-image:url('titanic.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.drivingchange-content {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  height: 80vh;
+  width: 45vw;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+// ENERGY HUB PAGE CSS
+
+.energyhub-banner {
+  background-image: url('hw.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.energyhub-content {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+  height: 80vh;
+  width: 40vw;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  color: white;
+}
