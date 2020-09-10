@@ -23,6 +23,11 @@
 
 .nav-link {
   color: white;
+
+  &:hover {
+    text-decoration: underline;
+    color: white;
+  }
 }
 
  .nav-link.active {
@@ -42,3 +47,4 @@
   top: 20px;
   margin-left: 20px;
 }
+
