@@ -168,6 +168,22 @@ html {
 }
 
 // Contact Page
+.contact-banner {
+  background-image: url('https://res.cloudinary.com/dzjxqunz7/image/upload/v1599751676/contact_wukzwx.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  text-align: center;
+}
+
+.contact-content {
+  background-color: rgba(255,255,255,0.75);
+  height: auto;
+  display: inline-block;
+  padding: 32px;
+  border-radius: 10px;
+  margin-top: 56px;
+}
 
 .inline-form {
   display: flex;
@@ -176,4 +192,25 @@ html {
 
 .submit-button {
   width: 15vw;
+  margin: 0 auto;
+  background-color: #0d284c;
+  color: white;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#getintouch {
+  text-align: center;
+  font-family: 'Work Sans', helvetica;
+  color: #0d284c;
+}
+
+label {
+  color: #0d284c;
+}
+
+input, textarea {
+  border: 1px solid #0d284c;
 }
