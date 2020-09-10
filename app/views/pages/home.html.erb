@@ -5,28 +5,61 @@
   <% end %>
   <ul class="nav nav-pills" id="pills-tab" role="tablist">
     <li class="nav-item">
+      <a class="nav-link" id="first">Who We Are</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#whoweare" data-toggle="pill" role="tab">Who We Are</a>
+      <a class="nav-link" id="second">A Shared Vision</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#sharedvision" data-toggle="pill" role="tab">A Shared Vision</a>
+      <a class="nav-link" id="third">Driving Change</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#drivingchange" data-toggle="pill" role="tab">Driving Change</a>
+      <a class="nav-link" id="fourth">Energy Hub</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#energyhub" data-toggle="pill" role="tab">Energy Hub</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#contact" data-toggle="pill" role="tab">Contact</a>
+      <a class="nav-link" id="fifth">Contact</a>
     </li>
   </ul>
 </div>
 
+<!-- Javascript to direct to different section -->
+<script>
+  document.getElementById('first').addEventListener('click', () => {
+      window.scrollTo({
+        top: document.querySelector('.section-one').offsetTop,
+        behavior: 'smooth'
+      });
+    })
+    document.getElementById('second').addEventListener('click', () => {
+      window.scrollTo({
+        top: document.querySelector('.section-two').offsetTop,
+        behavior: 'smooth'
+      });
+    })
+    document.getElementById('third').addEventListener('click', () => {
+      window.scrollTo({
+        top: document.querySelector('.section-three').offsetTop,
+        behavior: 'smooth'
+      });
+    })
+    document.getElementById('fourth').addEventListener('click', () => {
+      window.scrollTo({
+        top: document.querySelector('.section-four').offsetTop,
+        behavior: 'smooth'
+      });
+    })
+    document.getElementById('fifth').addEventListener('click', () => {
+      window.scrollTo({
+        top: document.querySelector('.section-five').offsetTop,
+        behavior: 'smooth'
+      });
+    })
+</script>
+
+
 <!-- WHO WE ARE -->
 <!--Empty Div For Layout Purposes -->
-<div class="height100 section">
+<div class="height100 section ">
 </div>
 
   <!-- Who We Are: Picture Page -->
@@ -51,7 +84,7 @@
 </div>
 
 <!-- Who We Are Page -->
-<div class="height100 section" id="whoweare">
+<div class="height100 section section-one" id="whoweare">
 </div>
 
 <div class="content-height whoweare-banner">
@@ -69,7 +102,7 @@
 
 <!-- A SHARED VISION -->
 
-<div class="height100 section" id="sharedvision">
+<div class="height100 section section-two" id="sharedvision">
 </div>
 
 <div class="content-height sharedvision-banner">
@@ -88,7 +121,7 @@
 
 <!-- DRIVING CHANGE -->
 
-<div class="height100 section" id="drivingchange">
+<div class="height100 section section-three" id="drivingchange">
 </div>
 
 <div class="content-height drivingchange-banner">
@@ -107,7 +140,7 @@
 
 <!--ENERGY HUB -->
 
-<div class="height100 section" id="energyhub">
+<div class="height100 section section-four" id="energyhub">
 </div>
 
 <div class="content-height energyhub-banner">
@@ -125,12 +158,59 @@
 </div>
 
 
+<!-- CONTACT -->
+
+<div class="height100 section section-five" id="contact">
+</div>
+
+<div class="content-height contact-banner">
+  <div class="contact-content">
+    <h1 id="getintouch">Get In Touch Below:</h1>
+      <form
+        action="https://formspree.io/mrgynjoo"
+        method="POST"
+        class="inline-form text-center">
+      <label>
+      Your Name:
+      <input type="text" name="name">
+      </label>
+      <label>
+      Your Email:
+      <input type="text" name="_replyto">
+      </label>
+      <label>
+      Your Message:
+      <textarea name="message"></textarea>
+      </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit" class="submit-button text-center">Send Message</button>
+</form>
+  </div>
+</div>
+
+<div class="homepage-footer">
+  <%= image_tag 'skuunaq-logo.png', class: 'footer-logo' %>
+  <p>A project of scale for Northern Ireland and beyond </p>
+</div>
+
+<!-- Javascript - first for the navbar, second for snap scroll -->
 <script>
-    const gra = function(min, max) {
+  document.querySelectorAll('.nav-link').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.classList.remove('active');
+      })
+        event.currentTarget.classList.add('active');
+    });
+  });
+
+    let gra = function(min, max) {
     return Math.random() * (max - min) + min;
     }
 
-    const init = function(){
+    let init = function(){
     let items = document.querySelectorAll('.section');
     for (let i = 0; i < items.length; i++){
         items[i].style.background = randomColor({luminosity: 'light'});
@@ -139,23 +219,6 @@
     }
     init();
 </script>
-
-<!-- CONTACT -->
-
-<div class="height100 section" id="contact">
-</div>
-
-<div class="content-height contact-banner">
-  <div class="contact-content">
-    <h1 id="getintouch">Get In Touch Below:</h1>
-
-  </div>
-</div>
-
-<div class="homepage-footer">
-  <%= image_tag 'skuunaq-logo.png', class: 'footer-logo' %>
-  <p>A project of scale for Northern Ireland and beyond </p>
-</div>
 
 
 
