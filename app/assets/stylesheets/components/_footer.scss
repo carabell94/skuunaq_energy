@@ -6,6 +6,12 @@
   p {
     padding-top: 28px;
     padding-right: 40px;
+
+    @media (max-width: 540px) {
+      padding-top: 20px;
+      padding-right: 20px;
+      font-size: 10px;
+    }
   }
 }
 
@@ -14,6 +20,12 @@
   width: 85px;
   margin-left: 20px;
   padding-bottom: 8px;
+
+  @media (max-width: 540px) {
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+  }
 }
 
 .contact-email {
