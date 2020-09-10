@@ -11,21 +11,59 @@
   color: white;
   font-size: 64px;
   margin-left: 32px;
+
+  @media (max-width: 540px) {
+    margin-left: 0px;
+    padding-top: 104px;
+  }
 }
 
 .banner h3 {
   font-size: 20px;
   margin-left: 32px;
+
+  @media (max-width: 540px) {
+    margin-left: 0px;
+    font-size: 14px;
+    padding-top: 125px;
+  }
 }
 
 // 'Learn More' Button
 .banner a {
   margin-left: 32px;
+
+  @media (max-width: 540px) {
+    margin-left: 0px;
+  }
 }
 
+// Welcome To
+
+.welcome-to {
+  @media (max-width: 1316px) {
+    font-size: 52px;
+  }
+  @media (max-width: 540px) {
+    font-size: 36px;
+
+  }
+}
 // Skuunaq Energy
 .title {
     font-size: 72px;
+
+    @media (max-width: 1495px) {
+      font-size: 64px;
+    }
+
+     @media (max-width: 1316px) {
+      font-size: 56px;
+    }
+
+    @media (max-width: 540px) {
+    font-size: 42px;
+  }
 }
 
 // Opacity round contents
@@ -36,6 +74,11 @@
   display: inline-block;
   position: absolute;
   left: 0;
+
+  @media (max-width: 540px) {
+    width: 100vw;
+    text-align: center !important;
+  }
 }
 
 .btn-primary {

@@ -3,6 +3,10 @@
   height: 80vh;
 }
 
+#pavingtheway {
+  color: white;
+}
+
 // WHO WE ARE PAGE CSS
 .whoweare-banner {
   background-image:url('https://res.cloudinary.com/dzjxqunz7/image/upload/v1599674326/cliff_nsjtfg.jpg');
@@ -19,6 +23,12 @@
   position: absolute;
   right: 0;
   text-align: center;
+
+  @media (max-width: 540px) {
+    width: 100vw;
+    text-align: center !important;
+    padding: 10px;
+  }
 
   p {
     font-family: 'Work Sans', helvetica;
@@ -51,6 +61,12 @@
   position: absolute;
   left: 0;
   text-align: center;
+
+  @media (max-width: 540px) {
+    width: 100vw;
+    text-align: center !important;
+    padding: 10px;
+  }
 
   h1, p {
     font-family: 'Work Sans', helvetica;
@@ -86,6 +102,12 @@
   position: absolute;
   right: 0;
   text-align: center;
+
+  @media (max-width: 540px) {
+    width: 100vw;
+    text-align: center !important;
+    padding: 10px;
+  }
 
   h1, p {
     font-family: 'Work Sans', helvetica;
@@ -124,6 +146,12 @@
   text-align: center;
   color: white;
 
+  @media (max-width: 540px) {
+    width: 100vw;
+    text-align: center !important;
+    padding: 10px;
+  }
+
   h1, p {
     font-family: 'Work Sans', helvetica;
     color: white;
@@ -133,6 +161,10 @@
     font-size: 24px;
     padding-top: 80px;
     font-weight: bolder;
+
+    @media (max-width: 540px) {
+      padding-top: 20px;
+    }
   }
 
   p {
@@ -183,11 +215,23 @@ html {
   padding: 32px;
   border-radius: 10px;
   margin-top: 56px;
+
+  @media (max-width: 540px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
+
+// Form Styling
 
 .inline-form {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 540px) {
+    display: block;
+    margin: 4px;
+  }
 }
 
 .submit-button {
@@ -195,6 +239,12 @@ html {
   margin: 0 auto;
   background-color: #0d284c;
   color: white;
+  border-radius: 5px;
+
+  @media (max-width: 540px) {
+    width: 30vw;
+    display: block;
+  }
 
   &:hover {
     transform: scale(1.1);
@@ -213,4 +263,12 @@ label {
 
 input, textarea {
   border: 1px solid #0d284c;
+}
+
+// Remove breaks for phone
+
+@media only screen and (max-width: 540px) {
+  br {
+    display: none;
+  }
 }
