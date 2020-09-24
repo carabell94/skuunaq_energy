@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Client Project.
+
+Static Landing Webpage for Renewable Energy Business - Skuunaq Energy: Paving the Way to a Hydrogen Economy.
+
+Built using Ruby on Rails, HTML, CSS and JavaScript.
